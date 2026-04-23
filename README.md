@@ -1,2 +1,0 @@
-# DevLink
-Connecting Developers
