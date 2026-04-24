@@ -120,7 +120,7 @@ export default function AskQuestion() {
         </div>
       </div>
 
-      <div className="md:col-span-1 space-y-6">
+      {/* <div className="md:col-span-1 space-y-6">
         <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-3xl p-6 border border-indigo-100">
           <div className="flex items-center gap-3 mb-4 text-indigo-900">
             <Sparkles className="w-6 h-6 text-indigo-500" />
@@ -176,7 +176,7 @@ export default function AskQuestion() {
             )}
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

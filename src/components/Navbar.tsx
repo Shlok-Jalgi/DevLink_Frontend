@@ -26,7 +26,7 @@ export default function Navbar() {
             href="/ask"
             className="text-sm font-medium hover:text-blue-600 transition-colors"
           >
-            Ask AI
+            Post Questions
           </Link>
           <Link
             href="/chat"
