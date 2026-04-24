@@ -57,8 +57,8 @@ export default function AskQuestion() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-8 grid md:grid-cols-3 gap-8 text-left">
-      <div className="md:col-span-2">
+    <div className="max-w-5xl mx-auto p-6 mt-8 grid md:grid-cols-4 gap-8 text-left">
+      <div className="md:col-span-4">
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Ask a Question
