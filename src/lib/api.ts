@@ -1,13 +1,13 @@
 import axios from "axios";
 
+// 1. Prioritize the Environment Variable. 
+// 2. Ensure the fallback for the browser is ALWAYS the HTTPS Render link.
 const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-const backendUrl =
-  typeof window !== "undefined"
-    ? NEXT_PUBLIC_API_URL || `https://devlink-backend-dnk0.onrender.com`
-    : NEXT_PUBLIC_API_URL || "http://localhost:3001";
+
+const backendUrl = NEXT_PUBLIC_API_URL || "https://devlink-backend-dnk0.onrender.com";
 
 const api = axios.create({
-  baseURL: `${backendUrl}/api`, // Backend runs on port 3001
+  baseURL: `${backendUrl}/api`, 
   headers: {
     "Content-Type": "application/json",
   },
