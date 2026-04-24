@@ -39,10 +39,7 @@ export default function ChatRoom({
     if (!user) return; // Wait for login
 
     const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-    const backendUrl =
-      typeof window !== "undefined"
-        ? NEXT_PUBLIC_API_URL || `http://${window.location.hostname}:3001`
-        : NEXT_PUBLIC_API_URL || "http://localhost:3001";
+    const backendUrl = NEXT_PUBLIC_API_URL || "https://devlink-backend-dnk0.onrender.com";
     const newSocket = io(backendUrl);
     setSocket(newSocket);
 
